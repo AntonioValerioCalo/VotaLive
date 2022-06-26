@@ -1,19 +1,30 @@
 
 import './index.css';
 import {Routes,Route} from "react-router-dom"
-import React from 'react'
+import React, { createContext, useState } from 'react'
 import LoginPage from './LoginPage';
 import LandingPage from "./LandingPage"
-export default function App() {
 
+export default function App() {
+ 
   return (
     <div>
+         
       <Routes>
          <Route path='/' element={<LoginPage />}/>
-         <Route path='/LandingPage' element={<LandingPage/>}/>
+        <Route path='/LandingPage' element={<LandingPage/>}/>
+
+    
+
+          
+         
+          
+       
+         
           
          
       </Routes>
+    
 
     </div>
   )

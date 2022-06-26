@@ -37,6 +37,21 @@ body {
   outline: none;
 
 }
+
+.nav-bar{ 
+  justify-content: end;
+
+}
+.container-img-navbar{
+  background-color: red;
+  border-radius: 50%;
+  height: 50px;
+  
+}
+.avatar{
+  height: 100%;
+  width: 100%;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
