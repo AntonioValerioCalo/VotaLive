@@ -40,7 +40,7 @@ export default function LoginPage() {
 
 
 const handleSubmit=()=>{
-const foundUserTitle=data.find(value=>value.title === user.username);
+const foundUserTitle=data.users.find(value=>value.username === user.username);
 if(!foundUserTitle){
   
   setToLanding(false)
@@ -58,7 +58,7 @@ return (
 (toLanding ?
    <div className='Login-Page'>
       <form  className=" container-form d-flex align-items-center flex-column bd-highlight gap-3">
-         <h1>welcome,{}</h1>
+         <h1>Accedi</h1>
          <input  value={username} className='input-style ' onChange={handleInput}  name='username' placeholder='Username' />
          <input  className='input-style' onChange={handleInput} value={password}name='password' type="password" placeholder="Password"/>
           

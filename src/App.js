@@ -4,6 +4,7 @@ import {Routes,Route} from "react-router-dom"
 import React, { createContext, useState } from 'react'
 import LoginPage from './LoginPage';
 import LandingPage from "./LandingPage"
+import Welcome from './Components/Welcome';
 
 export default function App() {
  
@@ -11,8 +12,9 @@ export default function App() {
     <div>
          
       <Routes>
-         <Route path='/' element={<LoginPage />}/>
-        <Route path='/LandingPage' element={<LandingPage/>}/>
+        <Route path='/' element={<Welcome/>}/>
+         <Route path='/LoginPageForRList' element={<LoginPage />}/>
+        <Route path='/LoginPageForRList/LandingPage' element={<LandingPage/>}/>
 
     
 

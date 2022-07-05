@@ -1,3 +1,4 @@
+
 body {
    width:100%;
    height: 100%;
@@ -8,6 +9,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.container-welcome{
+  height: 100vh;
+}
+.container-link-welcome{
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  font-family: 'Redressed', cursive;
+  font-size: 30px;
+}
+.buttonWelcome{
+ 
+
+  border-radius: 100px;
+ 
+  width: 250px;
+  height: 170px;
 }
 .Login-Page{
   height: 100Vh;
@@ -40,6 +60,8 @@ body {
 
 .nav-bar{ 
   justify-content: end;
+  align-items:center;
+  height:100px;
 
 }
 .container-img-navbar{
@@ -52,6 +74,42 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.party-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 89vh;
+   background-color: #FFD57E;
+}
+
+.container-of-all-button-partylist{
+  display:flex;
+  width: 90%;
+  height: 90%;
+  justify-content: center;
+  align-items: flex-start ;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  
+}
+
+.container-button{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+}
+
+.button-partylist{
+ height: 250px;   
+ width: 200px;
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
