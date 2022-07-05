@@ -1,18 +1,17 @@
 
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+
 
 function useFetch() {
-  const navigate =useNavigate();
+
 const [data, setData]=useState();
-const [user,setUser]=useState({username:"", password:""})
-const [logedUser,setLogedUser]= useState()
-const [toLanding, setToLanding]=useState(false)
+
 
 
 
 async function handleFetch(){
-  const response= await fetch('https://jsonplaceholder.typicode.com/todos/');
+  // const response= await fetch('https://jsonplaceholder.typicode.com/todos/');
+  const response = await fetch("https://dummyjson.com/users")
   const json= await response.json() ;
    setData(json);
   
@@ -45,9 +44,14 @@ async function handleFetch(){
   // }
   
   // }
+ 
+
+     
+  
   return{
+
     data,
-    // logedUser,
+ 
     // toLanding,
     // navigate,
     // addUsername:handleInput,
